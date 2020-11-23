@@ -19,7 +19,7 @@ class Shop extends MY_Shop_Controller
         $this->page_construct('pages/page', $this->data);
     }
 
-    // Display Page
+    // Display Page product
     function product($slug) {
         $product = $this->shop_model->getProductBySlug($slug);
         if (!$slug || !$product) {
